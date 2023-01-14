@@ -4,7 +4,7 @@ COPY src/ /app/
 
 FROM node:lts-alpine AS dependencies
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json /app
 RUN npm ci --production
 
 FROM alpine:3.17 AS runner
