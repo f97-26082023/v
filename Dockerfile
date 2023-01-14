@@ -10,7 +10,7 @@ RUN npm ci --production
 FROM alpine:3.17 AS runner
 RUN apk add --update --no-cache nodejs wireguard-tools dumb-init
 WORKDIR /app
-COPY --from=dependencies /app/node_modules /node_modules/
+COPY --from=dependencies /node_modules/ /app/node_modules
 COPY --from=builder /app /app
 EXPOSE 51820/udp
 EXPOSE 51821/tcp
