@@ -1,6 +1,6 @@
 FROM node:lts-alpine AS dependencies
 WORKDIR /home/wg
-COPY package.json package-lock.json /home/wg
+COPY ./src/package.json ./src/package-lock.json /home/wg
 RUN npm ci --production
 
 FROM alpine:3.17 AS runner
