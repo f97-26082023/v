@@ -1,7 +1,6 @@
 {
-  "release": 7,
   "name": "wg-easy",
-  "version": "1.0.0",
+  "version": "7.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -28,6 +27,6 @@
     ]
   },
   "engines": {
-    "node": "14"
+    "node": ">14"
   }
 }
