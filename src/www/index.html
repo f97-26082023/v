@@ -88,7 +88,7 @@
             <div class="flex-grow">
               <p class="text-2xl font-medium dark:text-neutral-200">Clients</p>
             </div>
-            <div class="flex justify-center">
+            <div class="flex-shrink-0">
               <button @click="clientCreate = true; clientCreateName = '';"
                 class="hover:bg-red-800 hover:border-red-800 hover:text-white text-gray-700 dark:text-neutral-200 border-2 border-gray-100 dark:border-neutral-600 py-2 px-4 rounded inline-flex items-center transition">
                 <svg class="w-4 mr-2" inline xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -98,14 +98,6 @@
                 </svg>
                 <span class="text-sm">New</span>
               </button>
-            </div>
-            <div class="flex-shrink-0">
-              <div>
-                <select @change="onSortationChange()" v-model="sortation" class="form-select appearance-none block w-full hover:bg-red-800 hover:border-red-800 hover:text-white text-gray-700 text-sm border-2 border-gray-100 px-4 py-2 bg-white bg-clip-padding bg-no-repeat rounded transition ease-in-out focus:text-gray-700 focus:bg-white focus:border-red-800 focus:outline-none">
-                  <option selected value="name">Sort by name</option>
-                  <option value="address">Sort by IP</option>
-                </select>
-              </div>
             </div>
           </div>
 
